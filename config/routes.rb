@@ -6,6 +6,8 @@ FavlangRails::Application.routes.draw do
   # root 'welcome#index'
   root 'landing#new'
 
+  get '/:github_username/favourite', to: 'landing#guess'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

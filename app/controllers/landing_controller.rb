@@ -1,13 +1,13 @@
 require 'favourite_language_guesser'
 
 class LandingController < ApplicationController
-  def new
-    @lg = FavouriteLanguageGuesser.new
-    @favourite_language = @lg.favourite_language('robinedman')
-    logger.info("Fav lang is: #{@favourite_language}")
-  end
-
   def guess
-
+    @lg = FavouriteLanguageGuesser.new
+    render(json: 
+      {
+        favourite: @lg.favourite_language(params[:github_username]),
+        username: params[:github_username]
+      }
+    )
   end
 end
