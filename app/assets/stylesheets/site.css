@@ -1,0 +1,23 @@
+/* Main marketing message and sign up button */
+.jumbotron h1 {
+  font-size: 46px;
+  font-weight: 100;
+  margin-bottom: 20px;
+}
+
+.btn-submit {
+  margin-top: 20px;
+}
+
+.jumbotron .input-group-lg > .form-control, .input-group-lg > .input-group-addon, .input-group-lg > .input-group-btn > .btn {
+  height: 50px;
+}
+
+.hidden {
+  display: none;
+}
+
+#guessing-form {
+  margin-top: 45px;
+}
+

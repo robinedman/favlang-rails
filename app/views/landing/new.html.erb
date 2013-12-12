@@ -1,1 +1,24 @@
-<p>Ahoy!</p>
+<div class="container">
+  <div class="header">
+    <h3 class="text-muted">Favourite Language Guesser</h3>
+  </div>
+
+  <div class="jumbotron">
+    <h1>What's their favourite language?</h1>
+    <p class="lead">Put someone's GitHub username in the box below and 
+      we'll attempt to figure out what their favourite language is.</p>
+    <form id="guessing-form">
+      <div id="answer" class="alert hidden"></div>
+      <div class="input-group input-group-lg">
+        <span class="input-group-addon">GitHub username</span>
+        <input id="username" type="text" class="form-control" placeholder="Username">
+      </div>
+      <input type="submit" class="btn btn-lg btn-info btn-submit" value="Find favourite language">
+    </form>
+  </div>
+
+  <div class="footer">
+    <p>&copy; Robin Edman 2013</p>
+  </div>
+
+</div> <!-- /container -->
