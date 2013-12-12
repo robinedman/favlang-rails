@@ -4,3 +4,6 @@
 require File.expand_path('../config/application', __FILE__)
 
 FavlangRails::Application.load_tasks
+
+# Make rake test to include lib
+MiniTest::Rails::Testing.default_tasks << 'lib'

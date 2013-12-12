@@ -47,3 +47,6 @@ end
 gem 'less-rails'
 
 gem 'bootstrap-on-rails'
+
+gem 'minitest-rails'
+
